@@ -18,6 +18,18 @@
   color: #534c64;
   line-height: 30px;
 }
+
+.common-btn {
+  background-color: #ff42a5;
+  padding: 15px 25px;
+  border-radius: 48px;
+  border: none;
+  color: white;
+  margin-top: 10px;
+}
+.text-center {
+  text-align: center;
+}
 /* nav section css */
 .nav-container {
   display: flex;
@@ -63,6 +75,7 @@
 }
 /* Banner section */
 .banner-section-container {
+  width: 93%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,13 +106,7 @@
   margin-right: 10px;
   color: #ff42a5;
 }
-.signin-btn {
-  padding: 15px 25px;
-  border-radius: 48px;
-  border: none;
-  color: white;
-  margin-top: 10px;
-}
+
 .go-rouge-btn {
   background-color: #4ec5f7;
   padding: 15px 25px;
@@ -108,14 +115,80 @@
   color: white;
   margin-top: 10px;
 }
+
+/* We are gamer section css */
+.we-are-gamer-section {
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.we-are-gamer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.we-are-gamer-title {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.we-are-gamer-img img {
+  width: 100%;
+}
+.we-are-gamer-img {
+  width: 50%;
+}
+.we-are-gamer-text {
+  width: 30%;
+}
+.we-are-gamer-text {
+  text-align: right;
+}
+
+/* Online Games section css */
+
+.online-games {
+  width: 93%;
+  margin: 0 auto;
+}
+.online-games-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+.icon-text {
+  position: absolute;
+  opacity: 0;
+}
+.online-games-container .icon-text:hover h1{
+  opacity: 1;
+}
+.online-games-card {
+  width: 20%;
+}
+.online-games-card img {
+  width: 100%;
+}
+.online-games-text-part {
+  color: #8758f1;
+}
 /* -----Responsive--------Mobile Device--------Media QuerY-------------- */
 
 @media screen and (max-width: 576px) {
   .nav-container,
   .nav-menu-and-icon,
-  .nav-menu-and-icon ul {
+  .nav-menu-and-icon ul,
+  .we-are-gamer-container {
     flex-direction: column;
-    margin: auto;
+    /* margin: auto; */
   }
 
   .nav-menu-and-icon ul > li {
@@ -131,6 +204,20 @@
   }
   .banner-text {
     width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .we-are-gamer-img {
+    width: 90%;
+  }
+  .we-are-gamer-text {
+    width: 90%;
+    text-align: center;
+  }
+  .online-games-card {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }
 
