@@ -179,7 +179,6 @@
   border: 3px solid transparent;
 }
 
-
 .hover-show {
   position: absolute;
   top: 0px;
@@ -187,7 +186,7 @@
   display: none;
   width: 100%;
   border-radius: 10px;
-  border: 3px solid #FF42A5;
+  border: 3px solid #ff42a5;
 }
 .online-games-card:hover .hover-show {
   display: block;
@@ -310,12 +309,9 @@
 .games-category-container {
   width: 70%;
   margin: 50px auto;
-  /* display: grid;
-  grid-template-columns: repeat(5, 1fr);
-   */
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 3px;
   justify-content: center;
   align-items: center;
 }
