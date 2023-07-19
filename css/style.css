@@ -14,6 +14,12 @@
 .common-text-color {
   color: #0b0223;
 }
+.common-color {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .common-description-color {
   color: #534c64;
   line-height: 30px;
@@ -162,15 +168,8 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  position: relative;
 }
-.icon-text {
-  position: absolute;
-  opacity: 0;
-}
-.online-games-container .icon-text:hover h1{
-  opacity: 1;
-}
+
 .online-games-card {
   width: 20%;
 }
@@ -180,13 +179,71 @@
 .online-games-text-part {
   color: #8758f1;
 }
+
+/* play instantly section*/
+.play-instantly {
+  width: 85%;
+  margin: 50px auto;
+}
+.play-instantly-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-instantly-text {
+  width: 25%;
+}
+.play-instantly-img {
+  width: 40%;
+  position: relative;
+}
+
+.over-image {
+  width: 50%;
+  position: absolute;
+  bottom: -10%;
+  left: -20%;
+}
+.play-instantly-img img {
+  width: 100%;
+}
+
+/* Play games  */
+.play-games {
+  width: 85%;
+  margin: 150px auto;
+}
+.play-games-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-games-text {
+  width: 25%;
+}
+.play-games-img {
+  width: 40%;
+  position: relative;
+}
+
+.over-image-two {
+  width: 40%;
+  position: absolute;
+  bottom: -10%;
+  left: 75%;
+}
+.play-games-img img {
+  width: 100%;
+}
+
 /* -----Responsive--------Mobile Device--------Media QuerY-------------- */
 
 @media screen and (max-width: 576px) {
   .nav-container,
   .nav-menu-and-icon,
   .nav-menu-and-icon ul,
-  .we-are-gamer-container {
+  .we-are-gamer-container,
+  .play-instantly-container {
     flex-direction: column;
     /* margin: auto; */
   }
@@ -196,7 +253,8 @@
     margin: 0 auto;
   }
 
-  .banner-section-container {
+  .banner-section-container,
+  .play-games-container {
     flex-direction: column-reverse;
   }
   .banner-img {
@@ -215,9 +273,19 @@
     text-align: center;
   }
   .online-games-card {
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin-bottom: 30px;
+  }
+  .play-instantly-text,
+  .play-games-text {
+    width: 90%;
+    text-align: center;
+  }
+  .play-instantly-img,
+  .play-games-img {
+    width: 80%;
+    margin: 20px auto;
   }
 }
 
@@ -235,5 +303,12 @@
   }
   .banner-text {
     width: 100%;
+  }
+  .we-are-gamer-text {
+    width: 47%;
+    padding: 10px;
+  }
+  .play-instantly-text,.play-games-text {
+    width: 30%;
   }
 }
