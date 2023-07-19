@@ -36,6 +36,9 @@
 .text-center {
   text-align: center;
 }
+.white-color-text {
+  color: white;
+}
 /* nav section css */
 .nav-container {
   display: flex;
@@ -236,6 +239,55 @@
   width: 100%;
 }
 
+/* careers section  */
+.careers-section {
+  width: 85%;
+  margin: 150px auto;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+.careers-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.careers-section-img {
+  width: 50%;
+}
+.careers-section-text {
+  width: 60%;
+  padding: 50px;
+}
+
+.careers-section-img img {
+  width: 100%;
+}
+
+.careers-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.careers-info-container ul {
+  list-style: none;
+}
+
+.careers-info-part-left {
+  line-height: 30px;
+  margin-top: 30px;
+}
+.careers-info-part-right {
+  text-align: right;
+  line-height: 30px;
+}
+.see-all-btn {
+  border-radius: 48px;
+  background: #fff;
+  border: none;
+  padding: 21px 40px;
+  margin-top: 30px;
+  color: #ff42a5;
+}
 /* -----Responsive--------Mobile Device--------Media QuerY-------------- */
 
 @media screen and (max-width: 576px) {
@@ -243,7 +295,8 @@
   .nav-menu-and-icon,
   .nav-menu-and-icon ul,
   .we-are-gamer-container,
-  .play-instantly-container {
+  .play-instantly-container,
+  .careers-section-container {
     flex-direction: column;
     /* margin: auto; */
   }
@@ -287,6 +340,21 @@
     width: 80%;
     margin: 20px auto;
   }
+  .careers-info-container {
+    width: 100%;
+  }
+  .careers-section-text {
+    width: 94%;
+    padding: 0px;
+  }
+  
+  .careers-section-img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .careers-section {
+    width: 100%;
+  }
 }
 
 /* -----Responsive--------Tablet or Medium--------Media QuerY-------------- */
@@ -294,7 +362,7 @@
   .nav-container {
     padding: 10px;
   }
-  .nav-container {
+  .nav-container,.careers-section-container {
     flex-direction: column;
   }
   .banner-img {
@@ -308,7 +376,23 @@
     width: 47%;
     padding: 10px;
   }
-  .play-instantly-text,.play-games-text {
+  .play-instantly-text,
+  .play-games-text {
     width: 30%;
+  }
+  .careers-info-container {
+    width: 100%;
+  }
+  .careers-section-text {
+    width: 94%;
+    padding: 0px;
+  }
+  
+  .careers-section-img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .careers-section {
+    width: 100%;
   }
 }
