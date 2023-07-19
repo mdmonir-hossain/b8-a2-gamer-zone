@@ -175,7 +175,24 @@
 
 .online-games-card {
   width: 20%;
+  position: relative;
+  border: 3px solid transparent;
 }
+
+
+.hover-show {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #FF42A5;
+}
+.online-games-card:hover .hover-show {
+  display: block;
+}
+
 .online-games-card img {
   width: 100%;
 }
@@ -349,6 +366,7 @@
 .fa-brands {
   font-size: 40px;
 }
+
 /* -----Responsive--------Mobile Device--------Media QuerY-------------- */
 
 @media screen and (max-width: 576px) {
